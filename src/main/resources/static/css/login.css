@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+
+:root{
+    --blue: #205EBA;
+    --orange:#ff7800;
+    --black:#130f40;
+    --green: #83C35B;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border: .2rem solid rgba(0,0,0,.1);
+    --outline: .1rem solid rgba(0,0,0,.1);
+    --outline-hover: .2rem solid var(--black);
+
+}
+
+*{
+    font-family: 'Lancelot', cursive;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7em;
+}
+
+section {
+    padding: 2rem 9%;
+
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: var(--light-color);
+}
+
+.header {
+    position: fixed;
+    top:0; left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+#menu-btn {
+    display: none;
+}
+
+.staglogo {
+    display: grid;
+    place-items: center;
+}
+
+h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.form-group label{
+    width: 100%;
+    margin: .7rem 0;
+    background: white;
+    border-radius: .5rem;
+    padding: .2rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.form-group input{
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.form-group p{
+    font-size: 2.5rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+}
+
+.form-group p a{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.btn:hover {
+    background: var(--green);
+    color: #fff;
+}
